@@ -10,7 +10,7 @@
 }
 
 
-@media screen and (min-width: 1278px) and (max-width: 1568px){
+@media only screen and (min-width: 1278px) and (max-width: 1568px){
     .first-grid-container{
         width: 100%;
         height: auto;
@@ -39,7 +39,7 @@
         align-items: center;
     }
 }
-@media screen and (min-width: 998px) and (max-width: 1278px){
+@media only screen and (min-width: 998px) and (max-width: 1278px){
     .first-grid-container{
         width: 100%;
         height: auto;
@@ -49,6 +49,9 @@
     }
     .text-container{
         width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         height: auto;
     }
     .text-container h1{
@@ -69,7 +72,7 @@
     }
 }
 
-@media screen and (min-width: 680px) and (max-width: 998px){
+@media only screen and (min-width: 680px) and (max-width: 998px){
     .blur-container{
         height: 80px;
     }
@@ -91,12 +94,13 @@
         height: auto;
     }
     .grid-element-first{
-        padding: 200px 0px;
-        padding-top: 290px;
         height: 100vh;
     }
     .text-container{
         width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         height: auto;
     }
     .text-container h1{
@@ -112,7 +116,6 @@
         color: var(--dark);
     }
     .grid-element-second{
-        padding: 280px 0px;
         height: 100vh;
     }
     .isometric-image{
@@ -130,14 +133,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        width: 40%;
         z-index: 0;
     }
     .vector-image-bottom{
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
-        height: 100vh;
+        width: 40%;
         z-index: 0;
     }
     .vector-image:before{
@@ -182,7 +185,48 @@
         font-size: 17px;
     }
 }
-@media screen and (min-width: 280px) and (max-width:680px){
+
+@media only screen and (min-width: 680px) and (max-width: 998px) and (orientation: landscape){
+    .blur-container{
+        height: 80px;
+    }
+    .navbar-menu{
+        height: 80px;
+    }
+
+    .first-grid-container{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .grid-element-first{
+        padding: 100vh 0;
+        height: 100vh;
+    }
+    .grid-element-second{
+        padding: 100vh 0;
+        height: 100vh;
+    }
+    
+    .vector-image-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        z-index: 0;
+    }
+    .vector-image-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 40%;
+        z-index: 0;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 680px){
     .blur-container{
         height: 80px;
     }
@@ -208,10 +252,13 @@
     }
     .text-container{
         width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         height: auto;
     }
     .text-container h1{
-        font-size: 45px;
+        font-size: 40px;
         text-align: center;
         color: var(--dark);
         margin-bottom: 50px;
@@ -240,14 +287,14 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 100vh;
+        width: 70%;
         z-index: 0;
     }
     .vector-image-bottom{
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
-        height: 100vh;
+        width: 70%;
         z-index: 0;
     }
     .vector-image:before{
@@ -290,5 +337,44 @@
         color: var(--hover-blue);
         font-weight: 500;
         font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 680px) and (orientation: landscape){
+    .blur-container{
+        height: 80px;
+    }
+    .navbar-menu{
+        height: 80px;
+    }
+
+    .first-grid-container{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .grid-element-first{
+        padding: 70vh 0;
+        height: 100vh;
+    }
+    .grid-element-second{
+        padding: 70vh 0;
+        height: 100vh;
+    }
+    .vector-image-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        z-index: 0;
+    }
+    .vector-image-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        z-index: 0;
     }
 }
