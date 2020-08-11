@@ -143,14 +143,14 @@ img{
     position: absolute;
     top: 20px;
     left: 0;
-    height: 80%;
+    width: 40%;
     z-index: 0;
 }
 .vector-image-bottom{
     position: absolute;
     bottom: 15px;
     right: 0;
-    height: 65%;
+    width: 40%;
     z-index: 0;
 }
 .vector-image:before{
